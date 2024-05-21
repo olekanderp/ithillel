@@ -1,0 +1,19 @@
+{
+  "name": "ht_2_npm",
+  "version": "1.0.0",
+  "description": "home task 2_npm",
+  "main": " index.js",
+  "scripts": {
+    "test": "node index.js",
+    "prettier": "npx prettier --write ."
+  },
+  "keywords": [
+    "first"
+  ],
+  "author": "Palaniuk",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "prettier": "^3.2.5"
+  }
+}
