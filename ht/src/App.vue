@@ -1,7 +1,5 @@
 <template>
-  <Card title="Task 1 title" />
-  <Card text="Task 2 text" />
-  <Card title="Task 3 title" text="Task 3 text" />
+  <Card/>
 </template>
 
 <script>

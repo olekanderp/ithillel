@@ -1,9 +1,9 @@
 <template>
   <div className="card">
     <div className="card-body">
-      <h3>Card</h3>
-      <h4 className="card-title" v-if="title">{{title}}</h4>
-      <p className="card-text" v-if="text">{{ text }}</p>
+      <h4 className="card-title">Card title</h4>
+      <p className="card-text">Some quick example text to build on the card</p>
+      <button type="button" className="btn btn-primary">Go somewhere</button>
     </div>
   </div>
 </template>
@@ -14,14 +14,6 @@ export default {
   components: {
   },
   props: {
-    text: {
-      type: String,
-      default: null
-    },
-    title: {
-      type: String,
-      default: null
-    }
   },
   data() {
     return {
