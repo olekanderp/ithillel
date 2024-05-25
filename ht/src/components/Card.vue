@@ -1,18 +1,47 @@
-<script>
-export default {
-  name: "Card",
-}
-</script>
-
 <template>
   <div className="card">
     <div className="card-body">
-      <h4 className="card-title">Card title</h4>
-      <p className="card-text">Some quick example text to build on the card</p>
-      <button type="button" className="btn btn-primary">Go somewhere</button>
+      <h3>Card</h3>
+      <h4 className="card-title" v-if="title">{{title}}</h4>
+      <p className="card-text" v-if="text">{{ text }}</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "CardComponent",
+  components: {
+  },
+  props: {
+    text: {
+      type: String,
+      default: null
+    },
+    title: {
+      type: String,
+      default: null
+    }
+  },
+  data() {
+    return {
+    };
+  },
+  computed: {
+
+  },
+  methods: {
+
+
+  },
+  watch: {
+
+  },
+  mounted() {
+    console.log('Component mounted');
+  }
+}
+</script>
 
 <style scoped>
 
