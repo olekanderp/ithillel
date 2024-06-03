@@ -1,17 +1,23 @@
 <template>
-  <Card title="Task 1 title" />
-  <Card text="Task 2 text" />
-  <Card title="Task 3 title" text="Task 3 text" />
+  <Definitions :data="date"></Definitions>
 </template>
 
 <script>
-import Card from './components/Card.vue'
+import Definitions from './components/Definitions.vue'
 
 export default {
   name: 'App',
   components: {
-    Card
-  }
+    Definitions
+  },
+  data() {
+    return {
+      date: [
+        { dt: 'one', dd: 'two', id: 1 },
+        { dt: 'another term', dd: 'another description', id: 2 },
+      ]
+    };
+  },
 }
 </script>
 
