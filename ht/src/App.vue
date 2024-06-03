@@ -1,14 +1,15 @@
 <template>
-  Використання — <Progress :percentage='40' />
+  Приклад використання: <Alert type="warning" text="what is love?" />
+  Приклад використання: <Alert type="secondary" text="what is love?" />
 </template>
 
 <script>
-import Progress from './components/Progress.vue'
+import Alert from './components/Alert.vue'
 
 export default {
   name: 'App',
   components: {
-    Progress
+    Alert
   },
   data() {
     return {
