@@ -1,21 +1,17 @@
 <template>
-  <Definitions :data="date"></Definitions>
+  Використання — <Progress :percentage='40' />
 </template>
 
 <script>
-import Definitions from './components/Definitions.vue'
+import Progress from './components/Progress.vue'
 
 export default {
   name: 'App',
   components: {
-    Definitions
+    Progress
   },
   data() {
     return {
-      date: [
-        { dt: 'one', dd: 'two', id: 1 },
-        { dt: 'another term', dd: 'another description', id: 2 },
-      ]
     };
   },
 }
