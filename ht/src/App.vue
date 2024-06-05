@@ -1,15 +1,25 @@
 <template>
-  Приклад використання: <Alert type="warning" text="what is love?" />
-  Приклад використання: <Alert type="secondary" text="what is love?" />
+<!--  TODO перший віріант-->
+<!--  <ListGroup>-->
+<!--    <ul class="list-group">-->
+<!--      <li class="list-group-item"><p>one</p></li>-->
+<!--      <li class="list-group-item"><p>two</p></li>-->
+<!--    </ul>-->
+<!--  </ListGroup>-->
+
+  <ListGroup>
+    <p>one</p>
+    <p>two</p>
+  </ListGroup>
 </template>
 
 <script>
-import Alert from './components/Alert.vue'
+import ListGroup from './components/ListGroup.vue'
 
 export default {
   name: 'App',
   components: {
-    Alert
+    ListGroup
   },
   data() {
     return {
