@@ -1,28 +1,21 @@
 <template>
-<!--  TODO перший віріант-->
-<!--  <ListGroup>-->
-<!--    <ul class="list-group">-->
-<!--      <li class="list-group-item"><p>one</p></li>-->
-<!--      <li class="list-group-item"><p>two</p></li>-->
-<!--    </ul>-->
-<!--  </ListGroup>-->
+  <Carousel :images="images">
 
-  <ListGroup>
-    <p>one</p>
-    <p>two</p>
-  </ListGroup>
+  </Carousel>
 </template>
 
 <script>
-import ListGroup from './components/ListGroup.vue'
+import Carousel from './components/Carousel.vue'
+
 
 export default {
   name: 'App',
   components: {
-    ListGroup
+    Carousel
   },
   data() {
     return {
+      images: ['first.jpg', 'second.jpg', 'third.jpg'],
     };
   },
 }
