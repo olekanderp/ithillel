@@ -1,5 +1,5 @@
 <template>
-  <Carousel :images="images">
+  <Carousel :images="listImages">
 
   </Carousel>
 </template>
@@ -15,9 +15,14 @@ export default {
   },
   data() {
     return {
-      images: ['first.jpg', 'second.jpg', 'third.jpg'],
     };
   },
+  computed: {
+    listImages() {
+     return ['assets/images/first.jpg' ,'assets/images/second.jpg', 'assets/images/third.jpg'];
+    }
+  },
+
 }
 </script>
 
