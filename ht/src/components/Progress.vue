@@ -5,11 +5,11 @@
     <div
         class="progress-bar"
         role="progressbar"
-        v-bind:aria-valuenow="computedValuenow"
+        :aria-valuenow="computedValuenow"
         aria-valuemin="0"
         aria-valuemax="100"
         aria-label="progressbar"
-        v-bind:style="{ width: computedWidth }"
+        :style="{ width: computedWidth }"
     >
     </div>
   </div>
@@ -18,17 +18,11 @@
 <script>
 export default {
   name: "ProgressComponent",
-  components: {
-  },
   props: {
     percentage: {
       type: String,
       required: true
     }
-  },
-  data() {
-    return {
-    };
   },
   computed: {
     computedWidth() {
@@ -38,19 +32,5 @@ export default {
       return this.percentage;
     },
   },
-  methods: {
-
-
-  },
-  watch: {
-
-  },
-  mounted() {
-    console.log('Component mounted');
-  }
 }
 </script>
-
-<style scoped>
-
-</style>
