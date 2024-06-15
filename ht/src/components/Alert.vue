@@ -1,13 +1,10 @@
 <template>
   <div :class="['alert',  computedAlert ]" role="alert">{{ text }}</div>
-
 </template>
 
 <script>
 export default {
   name: "AlertComponent",
-  components: {
-  },
   props: {
     type: {
       type: String,
@@ -18,28 +15,10 @@ export default {
       required: true
     }
   },
-  data() {
-    return {
-    };
-  },
   computed: {
     computedAlert() {
       return 'alert-' + this.type;
     },
   },
-  methods: {
-
-
-  },
-  watch: {
-
-  },
-  mounted() {
-    console.log('Component mounted');
-  }
 }
 </script>
-
-<style scoped>
-
-</style>
