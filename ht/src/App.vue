@@ -1,28 +1,19 @@
 <template>
-  <Carousel :images="listImages">
-
-  </Carousel>
+  <div>
+    <h1>Приклад компонента Collapse</h1>
+    <Collapse text="Це прихований текст" :opened="true" />
+  </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import Collapse from './components/Collapse.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Carousel
+    Collapse
   },
-  data() {
-    return {
-    };
-  },
-  computed: {
-    listImages() {
-     return ['assets/images/first.jpg' ,'assets/images/second.jpg', 'assets/images/third.jpg'];
-    }
-  },
-
 }
 </script>
 
